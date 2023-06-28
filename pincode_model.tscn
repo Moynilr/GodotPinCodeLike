@@ -1,0 +1,104 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://pincode_model.gd" type="Script" id=1]
+[ext_resource path="res://assets/pin.png" type="Texture" id=2]
+[ext_resource path="res://assets/pin_hover.png" type="Texture" id=3]
+
+[node name="pincode" type="Control"]
+light_mask = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="."]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="CheckBox" parent="Control"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 69.0
+margin_bottom = 69.0
+rect_scale = Vector2( 0.5, 0.5 )
+mouse_default_cursor_shape = 2
+custom_icons/checked = ExtResource( 3 )
+custom_icons/unchecked = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="CheckBox" parent="Control"]
+margin_left = 76.0
+margin_top = 10.0
+margin_right = 135.0
+margin_bottom = 69.0003
+rect_scale = Vector2( 0.5, 0.5 )
+mouse_default_cursor_shape = 2
+custom_icons/checked = ExtResource( 3 )
+custom_icons/unchecked = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="CheckBox" parent="Control"]
+margin_left = 10.0
+margin_top = 60.0
+margin_right = 69.0
+margin_bottom = 119.0
+rect_scale = Vector2( 0.5, 0.5 )
+mouse_default_cursor_shape = 2
+custom_icons/checked = ExtResource( 3 )
+custom_icons/unchecked = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="CheckBox" parent="Control"]
+margin_left = 76.0
+margin_top = 60.0
+margin_right = 135.0
+margin_bottom = 119.0
+rect_scale = Vector2( 0.5, 0.5 )
+mouse_default_cursor_shape = 2
+custom_icons/checked = ExtResource( 3 )
+custom_icons/unchecked = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="5" type="CheckBox" parent="Control"]
+margin_left = 10.0
+margin_top = 110.0
+margin_right = 69.0001
+margin_bottom = 169.0
+rect_scale = Vector2( 0.5, 0.5 )
+mouse_default_cursor_shape = 2
+custom_icons/checked = ExtResource( 3 )
+custom_icons/unchecked = ExtResource( 2 )
+keep_pressed_outside = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6" type="CheckBox" parent="Control"]
+margin_left = 76.0
+margin_top = 110.0
+margin_right = 135.0
+margin_bottom = 169.0
+rect_scale = Vector2( 0.5, 0.5 )
+mouse_default_cursor_shape = 2
+custom_icons/checked = ExtResource( 3 )
+custom_icons/unchecked = ExtResource( 2 )
+keep_pressed_outside = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="toggled" from="Control/1" to="." method="_on_1_toggled"]
+[connection signal="toggled" from="Control/2" to="." method="_on_2_toggled"]
+[connection signal="toggled" from="Control/3" to="." method="_on_3_toggled"]
+[connection signal="toggled" from="Control/4" to="." method="_on_4_toggled"]
+[connection signal="toggled" from="Control/5" to="." method="_on_5_toggled"]
+[connection signal="toggled" from="Control/6" to="." method="_on_6_toggled"]
